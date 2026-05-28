@@ -371,6 +371,190 @@ nav a,
     text-align: center;
 }
 
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    color: white;
+    text-shadow: 5px 5px 6px rgb(146, 112, 61);
+    background-color: rgb(70, 36, 4);
+    box-shadow: inset 0 5px 5px black;
+}
+
+footer h3,
+footer div {
+    flex: 1;
+    text-align: center;
+}
+
+footer h3:last-child {
+    text-align: right;
+}
+
+.clase-img {
+    width: 70%;
+    height: auto;
+    border-radius: 6px;
+    justify-self: center;
+    margin: 10px 0;
+    display: flex;
+}
+
+.tabla-stats {
+    width: 100%;
+    border-spacing: 0;
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(138, 103, 52, 0.5);
+    overflow: hidden;
+}
+
+.tabla-stats td {
+    color: white;
+    padding: 4px 8px;
+    border: 1px solid rgba(37, 25, 7, 0.4);
+    text-shadow: 5px 5px 6px rgb(46, 36, 22);
+}
+
+input[type="button"] {
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 6px rgb(69, 47, 14);
+    border: none;
+    cursor: pointer;
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 14px black;
+    background-color: rgb(70, 36, 4);
+    font-family: 'Ringbearer', cursive;
+}
+
+input[type="button"]:hover {
+    box-shadow: 0 7px 16px rgb(167, 113, 32);
+}
+
+.galeria-regiones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.galeria-regiones img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.galeria-regiones button {
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px black;
+    font-family: 'Ringbearer', cursive;
+}
+
+.galeria-regiones button:hover {
+    box-shadow: 0 7px 16px rgb(167, 113, 32);
+}
+
+.Pinformacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.Pinformacion b {
+    color: white;
+    text-shadow: 3px 3px 6px black;
+    font-size: 1.1em;
+}
+
+.Pinformacion button {
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 6px rgb(69, 47, 14);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px black;
+    font-family: 'Ringbearer', cursive;
+    align-self: flex-start;
+}
+
+.Pinformacion button:hover {
+    box-shadow: 0 7px 16px rgb(167, 113, 32);
+}
+
+.nombre-grande {
+    font-size: 2em;
+    color: white;
+    text-shadow: 3px 3px 6px black;
+    flex: 1;
+}
+
+.invocacion {
+    position: relative;
+}
+
+.invocacion img {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.invocacion img:hover {
+    transform: scale(1.15);
+}
+
+.info-invocacion {
+    display: none;
+    position: absolute;
+    background-color: rgba(30, 20, 10, 0.95);
+    border: 1px solid rgb(167, 113, 32);
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-size: 0.8em;
+    width: 180px;
+    z-index: 100;
+    box-shadow: 0 4px 10px black;
+}
+
+.info-invocacion p {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 2px 0;
+    padding: 2px 0;
+    width: auto;
+}
+
 @media (max-width: 768px) {
     .contenedor {
         grid-template-areas:
