@@ -26,7 +26,7 @@
         </nav>
 
         <main>
-            <table>
+            <table class="tabla-objetos">
                 <tr>
                     <td><img src="../IMG/arma.png" alt="Armas"></td>
                     <td><b>Armas</b></td>
@@ -88,33 +88,35 @@
                             <option value="miserable">Miserable</option>
                         </select>
 
-                        <label>Recuerdo:</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Semilla"> Semilla
-                            dorada</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Cenizas"> Cenizas de
-                            Diablo</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Medallon"> Medallón de
-                            ámbar</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Apendice"> Apéndice de
-                            tierras</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Rama"> Rama
-                            cautivadora</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Tarro"> Tarro
-                            agrietado</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Llave"> Llave de espada
-                            pétrea</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Bendición">
-                            Bendición</label>
-                        <label class="label-radio"><input type="radio" name="valores" value="Nada" checked> Sin
-                            regalo</label>
+                        <label for="recuerdo">Recuerdo:</label>
+                        <select id="recuerdo" name="Recuerdo">
+                            <option value="Semilla">Semilla dorada</option>
+                            <option value="Cenizas">Cenizas de Diablo</option>
+                            <option value="Medallon">Medallón de ámbar</option>
+                            <option value="Apendice">Apéndice de tierras</option>
+                            <option value="Rama">Rama cautivadora</option>
+                            <option value="Tarro">Tarro agrietado</option>
+                            <option value="Llave">Llave de espada pétrea</option>
+                            <option value="Bendicion">Bendición</option>
+                            <option value="Nada" selected>Sin regalo</option>
+                        </select>
+
                         <input type="button" id="crear" value="Crear Sinluz">
+                        <div id="resultado-clase"></div>
                     </fieldset>
                 </form>
             </div>
         </aside>
 
         <footer>
-            <h3>Desarrollado por Vicente Martín Brito</h3>
+            <h3 id="visitas">Visitas a la web: </h3>
+            <div class="Creditos">
+                <h3>Vicente Martín Brito</h3>
+            </div>
+            <div class="reloj">
+                <label for="relojL">Hora actual:</label>
+                <label id="reloj"></label>
+            </div>
         </footer>
 
     </div>
