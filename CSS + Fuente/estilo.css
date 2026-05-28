@@ -87,7 +87,8 @@ nav a:hover {
     box-shadow: 0 7px 16px rgb(167, 113, 32);
 }
 
-h1, h2 {
+h1,
+h2 {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -159,7 +160,7 @@ main p {
     box-sizing: border-box;
 }
 
-main > img {
+main>img {
     width: 50%;
     max-width: 700px;
     margin: auto;
@@ -274,6 +275,102 @@ footer {
     height: auto;
 }
 
+.video {
+    width: 100%;
+    max-width: 1280px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    margin: 10px;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form {
+    margin-top: 12px;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    background-color: rgba(239, 205, 154, 0.7);
+    border: none;
+    border-radius: 5px;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    text-shadow: 5px 5px 6px rgb(146, 112, 61);
+}
+
+input,
+select,
+option {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-family: 'Ringbearer', cursive;
+}
+
+input[type="radio"] {
+    accent-color: #ddab20;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 6px rgb(69, 47, 14);
+    border: none;
+    cursor: pointer;
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 14px black;
+    background-color: rgb(70, 36, 4);
+    font-family: 'Ringbearer', cursive;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 7px 16px rgb(167, 113, 32);
+}
+
+.btn-steam {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 20px 20px;
+}
+
+.btn-steam a {
+    background-color: rgb(70, 36, 4);
+}
+
+nav a,
+.btn-steam a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    padding: 16px 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 14px black;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .contenedor {
         grid-template-areas:
@@ -303,7 +400,8 @@ footer {
         width: 90%;
     }
 
-    aside, .aside2 {
+    aside,
+    .aside2 {
         padding-bottom: 24px;
     }
 
@@ -354,4 +452,6 @@ footer {
         align-items: center;
         padding: 0px;
     }
+
+
 }
