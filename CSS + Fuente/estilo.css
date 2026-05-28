@@ -1,0 +1,357 @@
+@font-face {
+    font-family: 'Ringbearer';
+    src: url('../CSS + Fuente/RING.TTF') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "aside main aside2"
+        "footer footer footer";
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto 1fr auto;
+    min-height: 100vh;
+    font-family: 'Ringbearer', cursive;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: header;
+    background-image: url("../IMG/4557bf99646c0bf1d9773e671d5a55fc.webp");
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+}
+
+header img {
+    max-width: 700px;
+    width: 50%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    grid-area: nav;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgb(70, 36, 4);
+    box-shadow: inset 0 5px 5px black;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+}
+
+nav li {
+    flex: 1;
+    min-width: 0;
+}
+
+nav a {
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    padding: 16px 12px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 10px black;
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 6px 14px black;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+nav a:hover {
+    box-shadow: 0 7px 16px rgb(167, 113, 32);
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 5px 5px 7px rgb(68, 68, 68);
+}
+
+aside {
+    background-image: url("../IMG/—Pngtree—crumpled parchment paper texture background_15306883.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: aside;
+}
+
+aside img {
+    display: flex;
+    width: 70%;
+    height: auto;
+    margin: 50px auto 20px auto;
+    max-width: 200px;
+}
+
+aside p {
+    display: flex;
+    justify-content: center;
+    max-width: 250px;
+    padding: 20px 8px;
+    margin: 0 20px 14px;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    border-radius: 5px;
+    background-color: rgba(239, 205, 154, 0.7);
+    text-shadow: 5px 5px 6px rgb(146, 112, 61);
+}
+
+.aside2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    grid-area: aside2;
+    background-image: url("../IMG/—Pngtree—crumpled parchment paper texture background_15306883.jpg");
+    background-size: cover;
+    padding: 20px;
+    padding-top: 8px;
+}
+
+main {
+    display: flex;
+    grid-area: main;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    text-shadow: 5px 5px 6px rgb(190, 152, 94);
+    background-image: url('../IMG/heres-the-4k-version-of-the-logo-if-anyone-wants-to-use-it-v0-e8u661wb0gx71.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+main p {
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    border-radius: 5px;
+    background-color: rgba(239, 205, 154, 0.7);
+    text-shadow: 5px 5px 6px rgb(190, 152, 94);
+    box-sizing: border-box;
+}
+
+main > img {
+    width: 50%;
+    max-width: 700px;
+    margin: auto;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-shadow: 5px 5px 6px rgb(146, 112, 61);
+    background-color: rgb(70, 36, 4);
+    box-shadow: inset 0 5px 5px black;
+    text-align: center;
+}
+
+.personaje {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgb(167, 113, 32);
+    padding-bottom: 10px;
+}
+
+.personaje img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    flex-shrink: 0;
+}
+
+.invocacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    border-right: 2px solid rgb(167, 113, 32);
+    flex: 1;
+    min-width: 150px;
+}
+
+.invocacion:last-child {
+    border-right: none;
+}
+
+.invocacion img {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.invocacion p {
+    text-align: center;
+    background-color: rgba(239, 205, 154, 0.7);
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenedor-invocaciones {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.lore-intro {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    border-radius: 5px;
+    background-color: rgba(239, 205, 154, 0.7);
+    text-shadow: 5px 5px 6px rgb(190, 152, 94);
+    box-sizing: border-box;
+}
+
+.lore-intro p {
+    background-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 4px 0;
+}
+
+.tabla-objetos {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 10px;
+    max-width: 100%;
+    table-layout: fixed;
+}
+
+.tabla-objetos td {
+    padding: 10px;
+    vertical-align: middle;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    background-color: rgba(239, 205, 154, 0.7);
+    text-shadow: 5px 5px 6px rgb(190, 152, 94);
+}
+
+.tabla-objetos td img {
+    width: 90px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .contenedor {
+        grid-template-areas:
+            "header"
+            "nav"
+            "aside"
+            "main"
+            "aside2"
+            "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr auto auto auto;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        box-sizing: border-box;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    aside, .aside2 {
+        padding-bottom: 24px;
+    }
+
+    aside p {
+        margin: 10px auto;
+        max-width: 90%;
+    }
+
+    fieldset {
+        margin: 0 auto;
+        max-width: 250px;
+    }
+
+    .contenedor-invocaciones {
+        flex-direction: column;
+    }
+
+    .invocacion {
+        border-right: none;
+        border-bottom: 2px solid rgb(167, 113, 32);
+        padding: 15px 0;
+    }
+
+    .invocacion:last-child {
+        border-bottom: none;
+    }
+
+    .tabla-objetos tr {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid rgb(167, 113, 32);
+    }
+
+    .tabla-objetos td {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .tabla-objetos td img {
+        width: 80px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+}
