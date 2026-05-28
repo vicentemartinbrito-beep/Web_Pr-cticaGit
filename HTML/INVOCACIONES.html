@@ -28,24 +28,73 @@
         <main>
             <div class="contenedor-invocaciones">
                 <div class="invocacion">
-                    <p><b>Lobo Espectral:</b> Una de las primeras invocaciones que puede obtener el Sinluz.</p>
-                    <img src="../IMG/lobo.png" alt="Lobo Espectral">
+                    <p><b>Lobo Espectral:</b> Una de las primeras invocaciones que puede obtener el Sinluz. Tres lobos
+                        espectrales que acosan al enemigo desde distintos ángulos, distrayéndolo y facilitando el
+                        ataque.</p>
+                    <img src="../IMG/lobo.png" alt="Lobo Espectral" onmouseover="mostrarInfoInv('info-lobo')"
+                        onmouseout="ocultarInfoInv('info-lobo')">
+                    <div class="info-invocacion" id="info-lobo">
+                        <p><b>Lobo Espectral</b></p>
+                        <p>FP: 17</p>
+                        <p>Vida: 283</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Distrae al enemigo desde varios ángulos</p>
+                    </div>
                 </div>
                 <div class="invocacion">
-                    <p><b>Cenizas de Soldajarra:</b> Tres pequeños soldados de barro que se lanzan al combate.</p>
-                    <img src="../IMG/tarro.webp" alt="Cenizas de Soldajarra">
+                    <p><b>Cenizas de Soldajarra:</b> Tres pequeños soldados de barro que se lanzan al combate con una
+                        energía y determinación desproporcionadas para su tamaño. Su capacidad para distraer enemigos
+                        los convierte en una invocación sorprendentemente útil.</p>
+                    <img src="../IMG/tarro.webp" alt="Cenizas de Soldajarra" onmouseover="mostrarInfoInv('info-tarro')"
+                        onmouseout="ocultarInfoInv('info-tarro')">
+                    <div class="info-invocacion" id="info-tarro">
+                        <p><b>Cenizas de Soldajarra</b></p>
+                        <p>FP: 14</p>
+                        <p>Vida: 632</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Distrae enemigos por su pequeño tamaño</p>
+                    </div>
                 </div>
                 <div class="invocacion">
-                    <p><b>Caballero Tiche:</b> La sombra de una ágil guerrera que esquiva los ataques enemigos.</p>
-                    <img src="../IMG/tiche.webp" alt="Caballero Tiche">
+                    <p><b>Caballero Tiche:</b> La sombra de una ágil guerrera que esquiva los ataques enemigos con gran
+                        destreza. Una de las invocaciones más valoradas por su movilidad y daño.</p>
+                    <img src="../IMG/tiche.webp" alt="Caballero Tiche" onmouseover="mostrarInfoInv('info-tiche')"
+                        onmouseout="ocultarInfoInv('info-tiche')">
+                    <div class="info-invocacion" id="info-tiche">
+                        <p><b>Caballero Tiche</b></p>
+                        <p>FP: 132</p>
+                        <p>Vida: 1406</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Alta movilidad y daño elevado</p>
+                    </div>
                 </div>
                 <div class="invocacion">
-                    <p><b>Deenh, Gavilán Tormentoso:</b> Un halcón espectral que ataca con ráfagas de viento.</p>
-                    <img src="../IMG/gavilan.webp" alt="Deenh Gavilán Tormentoso">
+                    <p><b>Deenh, Gavilán Tormentoso:</b> Un halcón espectral que ataca a los enemigos con ráfagas de
+                        viento cortante. Su velocidad y movilidad lo convierten en una invocación difícil de ignorar
+                        para cualquier rival.</p>
+                    <img src="../IMG/gavilan.webp" alt="Deenh Gavilán Tormentoso"
+                        onmouseover="mostrarInfoInv('info-gavilan')" onmouseout="ocultarInfoInv('info-gavilan')">
+                    <div class="info-invocacion" id="info-gavilan">
+                        <p><b>Deenh, Gavilán Tormentoso</b></p>
+                        <p>FP: 20</p>
+                        <p>Vida: 532</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Ataques de viento cortante a distancia</p>
+                    </div>
                 </div>
                 <div class="invocacion">
-                    <p><b>Lágrima Mimética:</b> La invocación más poderosa de las Tierras Intermedias.</p>
-                    <img src="../IMG/mimetica.webp" alt="Lágrima Mimética">
+                    <p><b>Lágrima Mimética:</b> La invocación más poderosa de las Tierras Intermedias. Crea una copia
+                        exacta del Sinluz, replicando su equipamiento y estilo de combate, convirtiéndose en un aliado
+                        devastador.</p>
+                    <img src="../IMG/mimetica.webp" alt="Lágrima Mimética" onmouseover="mostrarInfoInv('info-mimetica')"
+                        onmouseout="ocultarInfoInv('info-mimetica')">
+                    <div class="info-invocacion" id="info-mimetica">
+                        <p><b>Lágrima Mimética</b></p>
+                        <p>FP: 660</p>
+                        <p>Vida: —</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Copia al Sinluz con su equipamiento</p>
+                    </div>
                 </div>
             </div>
         </main>
@@ -112,6 +161,8 @@
         </footer>
 
     </div>
+
+    <script src="../JS/invocaciones.js"></script>
 </body>
 
 </html>

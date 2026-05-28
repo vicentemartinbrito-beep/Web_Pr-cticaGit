@@ -515,6 +515,46 @@ input[type="button"]:hover {
     flex: 1;
 }
 
+.invocacion {
+    position: relative;
+}
+
+.invocacion img {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.invocacion img:hover {
+    transform: scale(1.15);
+}
+
+.info-invocacion {
+    display: none;
+    position: absolute;
+    background-color: rgba(30, 20, 10, 0.95);
+    border: 1px solid rgb(167, 113, 32);
+    border-radius: 6px;
+    padding: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-size: 0.8em;
+    width: 180px;
+    z-index: 100;
+    box-shadow: 0 4px 10px black;
+}
+
+.info-invocacion p {
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin: 2px 0;
+    padding: 2px 0;
+    width: auto;
+}
+
 @media (max-width: 768px) {
     .contenedor {
         grid-template-areas:
