@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS + Fuente/estilo.css">
     <title>Elden Ring - Las Tierras Intermedias</title>
+
 </head>
 
 <body>
@@ -27,18 +29,26 @@
         <main>
             <div class="lore-intro">
                 <p><b>Adéntrate en las Tierras Intermedias.</b></p>
-                <p>Hubo un tiempo en que el Elden Ring reinaba sobre todas las cosas y la diosa Marika custodiaba su luz dorada. Pero ese tiempo terminó.</p>
-                <p>El Elden Ring fue destruido. Los semidioses tomaron cada fragmento para sí, desatando una guerra que dejó las Tierras Intermedias rotas y sumidas en el caos.</p>
+                <p>Hubo un tiempo en que el Elden Ring reinaba sobre todas las cosas y la diosa Marika custodiaba su luz
+                    dorada. Pero ese tiempo terminó.</p>
+                <p>El Elden Ring fue destruido. Los semidioses tomaron cada fragmento para sí, desatando una guerra que
+                    dejó las Tierras Intermedias rotas y sumidas en el caos.</p>
                 <p>Tú eres un <b>Sinluz</b>: un desterrado al que la gracia vuelve a llamar con un único propósito:</p>
                 <p><b>Reclamar el Elden Ring y convertirte en su Señor.</b></p>
                 <p>Lo que hagas con ese poder... depende solo de ti.</p>
             </div>
+            <iframe class="video" src="https://www.youtube.com/embed/qqiC88f9ogU?si=aMwkUGEnMgAey8k3"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </main>
 
         <aside>
             <div>
                 <h2>- Bienvenido -</h2>
-                <p>"Las Tierras Intermedias te esperan. Un mundo roto por la ambición de los dioses, donde tú, un desterrado sin gracia, deberás alzarte, enfrentarte a semidioses y reclamar el Elden Ring. ¿Tienes el valor de adentrarte en sus misterios?"</p>
+                <p>"Las Tierras Intermedias te esperan. Un mundo roto por la ambición de los dioses, donde tú, un
+                    desterrado sin gracia, deberás alzarte, enfrentarte a semidioses y reclamar el Elden Ring. ¿Tienes
+                    el valor de adentrarte en sus misterios?"</p>
             </div>
             <div>
                 <img src="IMG/201050.png" alt="Caratula">
@@ -48,14 +58,59 @@
         <aside class="aside2">
             <div>
                 <h2>- Crea tu Sinluz -</h2>
+                <form>
+                    <fieldset>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="Nombre" required>
+
+                        <label for="class">Clase:</label>
+                        <select id="class" name="Clase">
+                            <option value="vagante">Vagante</option>
+                            <option value="samurai">Samurai</option>
+                            <option value="guerrero">Guerrero</option>
+                            <option value="heroe">Héroe</option>
+                            <option value="astrologo">Astrólogo</option>
+                            <option value="prisionero">Prisionero</option>
+                            <option value="profeta">Profeta</option>
+                            <option value="confesor">Confesor</option>
+                            <option value="bandido">Bandido</option>
+                            <option value="miserable">Miserable</option>
+                        </select>
+
+                        <label for="recuerdo">Recuerdo:</label>
+                        <select id="recuerdo" name="Recuerdo">
+                            <option value="Semilla">Semilla dorada</option>
+                            <option value="Cenizas">Cenizas de Diablo</option>
+                            <option value="Medallon">Medallón de ámbar</option>
+                            <option value="Apendice">Apéndice de tierras</option>
+                            <option value="Rama">Rama cautivadora</option>
+                            <option value="Tarro">Tarro agrietado</option>
+                            <option value="Llave">Llave de espada pétrea</option>
+                            <option value="Bendicion">Bendición</option>
+                            <option value="Nada" selected>Sin regalo</option>
+                        </select>
+
+                        <input type="button" id="crear" value="Crear Sinluz">
+                        <div id="resultado-clase"></div>
+                    </fieldset>
+                </form>
             </div>
         </aside>
 
         <footer>
-            <h3>Desarrollado por Vicente Martín Brito</h3>
+            <h3 id="visitas">Visitas a la web: </h3>
+            <div class="Creditos">
+                <h3>Vicente Martín Brito</h3>
+            </div>
+            <div class="reloj">
+                <label for="relojL">Hora actual:</label>
+                <label id="reloj"></label>
+            </div>
         </footer>
 
     </div>
+
+    <script src="JS/index.js"></script>
 </body>
 
 </html>

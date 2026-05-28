@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS + Fuente/estilo.css">
+    <title>Elden Ring - Invocaciones</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header>
+            <img src="../IMG/Elden-Ring-Logo-PNG-Pic.png" alt="Logo de Elden Ring">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../HTML/REGIONES.html">Regiones del mundo</a></li>
+                <li><a href="../HTML/PERSONAJES.html">Personajes</a></li>
+                <li><a href="../HTML/OBJETOS.html">Objetos</a></li>
+                <li><a href="../HTML/INVOCACIONES.html">Invocaciones</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="contenedor-invocaciones">
+                <div class="invocacion">
+                    <p><b>Lobo Espectral:</b> Una de las primeras invocaciones que puede obtener el Sinluz. Tres lobos
+                        espectrales que acosan al enemigo desde distintos ángulos, distrayéndolo y facilitando el
+                        ataque.</p>
+                    <img src="../IMG/lobo.png" alt="Lobo Espectral" onmouseover="mostrarInfoInv('info-lobo')"
+                        onmouseout="ocultarInfoInv('info-lobo')">
+                    <div class="info-invocacion" id="info-lobo">
+                        <p><b>Lobo Espectral</b></p>
+                        <p>FP: 17</p>
+                        <p>Vida: 283</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Distrae al enemigo desde varios ángulos</p>
+                    </div>
+                </div>
+                <div class="invocacion">
+                    <p><b>Cenizas de Soldajarra:</b> Tres pequeños soldados de barro que se lanzan al combate con una
+                        energía y determinación desproporcionadas para su tamaño. Su capacidad para distraer enemigos
+                        los convierte en una invocación sorprendentemente útil.</p>
+                    <img src="../IMG/tarro.webp" alt="Cenizas de Soldajarra" onmouseover="mostrarInfoInv('info-tarro')"
+                        onmouseout="ocultarInfoInv('info-tarro')">
+                    <div class="info-invocacion" id="info-tarro">
+                        <p><b>Cenizas de Soldajarra</b></p>
+                        <p>FP: 14</p>
+                        <p>Vida: 632</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Distrae enemigos por su pequeño tamaño</p>
+                    </div>
+                </div>
+                <div class="invocacion">
+                    <p><b>Caballero Tiche:</b> La sombra de una ágil guerrera que esquiva los ataques enemigos con gran
+                        destreza. Una de las invocaciones más valoradas por su movilidad y daño.</p>
+                    <img src="../IMG/tiche.webp" alt="Caballero Tiche" onmouseover="mostrarInfoInv('info-tiche')"
+                        onmouseout="ocultarInfoInv('info-tiche')">
+                    <div class="info-invocacion" id="info-tiche">
+                        <p><b>Caballero Tiche</b></p>
+                        <p>FP: 132</p>
+                        <p>Vida: 1406</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Alta movilidad y daño elevado</p>
+                    </div>
+                </div>
+                <div class="invocacion">
+                    <p><b>Deenh, Gavilán Tormentoso:</b> Un halcón espectral que ataca a los enemigos con ráfagas de
+                        viento cortante. Su velocidad y movilidad lo convierten en una invocación difícil de ignorar
+                        para cualquier rival.</p>
+                    <img src="../IMG/gavilan.webp" alt="Deenh Gavilán Tormentoso"
+                        onmouseover="mostrarInfoInv('info-gavilan')" onmouseout="ocultarInfoInv('info-gavilan')">
+                    <div class="info-invocacion" id="info-gavilan">
+                        <p><b>Deenh, Gavilán Tormentoso</b></p>
+                        <p>FP: 20</p>
+                        <p>Vida: 532</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Ataques de viento cortante a distancia</p>
+                    </div>
+                </div>
+                <div class="invocacion">
+                    <p><b>Lágrima Mimética:</b> La invocación más poderosa de las Tierras Intermedias. Crea una copia
+                        exacta del Sinluz, replicando su equipamiento y estilo de combate, convirtiéndose en un aliado
+                        devastador.</p>
+                    <img src="../IMG/mimetica.webp" alt="Lágrima Mimética" onmouseover="mostrarInfoInv('info-mimetica')"
+                        onmouseout="ocultarInfoInv('info-mimetica')">
+                    <div class="info-invocacion" id="info-mimetica">
+                        <p><b>Lágrima Mimética</b></p>
+                        <p>FP: 660</p>
+                        <p>Vida: —</p>
+                        <p>Tipo: Espíritu</p>
+                        <p>Efecto: Copia al Sinluz con su equipamiento</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div>
+                <h2>- Campana de Ranni -</h2>
+                <p>"La Campana de Plata es el objeto que permite al Sinluz invocar espíritus en combate."</p>
+            </div>
+            <div>
+                <img src="../IMG/campana.webp" alt="Campana de Invocación">
+            </div>
+        </aside>
+
+        <aside class="aside2">
+            <div>
+                <h2>- Crea tu Sinluz -</h2>
+                <form>
+                    <fieldset>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="Nombre" required>
+
+                        <label for="class">Clase:</label>
+                        <select id="class" name="Clase">
+                            <option value="vagante">Vagante</option>
+                            <option value="samurai">Samurai</option>
+                            <option value="guerrero">Guerrero</option>
+                            <option value="heroe">Héroe</option>
+                            <option value="astrologo">Astrólogo</option>
+                            <option value="prisionero">Prisionero</option>
+                            <option value="profeta">Profeta</option>
+                            <option value="confesor">Confesor</option>
+                            <option value="bandido">Bandido</option>
+                            <option value="miserable">Miserable</option>
+                        </select>
+
+                        <label>Recuerdo:</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Semilla"> Semilla
+                            dorada</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Cenizas"> Cenizas de
+                            Diablo</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Medallon"> Medallón de
+                            ámbar</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Apendice"> Apéndice de
+                            tierras</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Rama"> Rama
+                            cautivadora</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Tarro"> Tarro
+                            agrietado</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Llave"> Llave de espada
+                            pétrea</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Bendición">
+                            Bendición</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Nada" checked> Sin
+                            regalo</label>
+                        <input type="button" id="crear" value="Crear Sinluz">
+                    </fieldset>
+                </form>
+            </div>
+        </aside>
+
+        <footer>
+            <h3>Desarrollado por Vicente Martín Brito</h3>
+        </footer>
+
+    </div>
+
+    <script src="../JS/invocaciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS + Fuente/estilo.css">
+    <title>Elden Ring - Personajes</title>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <header>
+            <img src="../IMG/Elden-Ring-Logo-PNG-Pic.png" alt="Logo de Elden Ring">
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../HTML/REGIONES.html">Regiones del mundo</a></li>
+                <li><a href="../HTML/PERSONAJES.html">Personajes</a></li>
+                <li><a href="../HTML/OBJETOS.html">Objetos</a></li>
+                <li><a href="../HTML/INVOCACIONES.html">Invocaciones</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="personaje">
+                <img src="../IMG/melina.png" alt="Melina">
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('melina', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-melina">Melina</span>
+                    <p class="descripcion" id="melina"><b>Melina:</b> Una misteriosa joven que aparece ante el Sinluz al
+                        comienzo de su viaje. Actúa como guía y aliada, ofreciendo subir de nivel a cambio de Runas en
+                        los Lugares de Gracia. Su origen y verdadera naturaleza permanecen envueltos en secreto, aunque
+                        está íntimamente ligada a la voluntad de Marika y al destino de las Tierras Intermedias.</p>
+                </div>
+            </div>
+            <div class="personaje">
+                <img src="../IMG/ranni.webp" alt="Ranni">
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('ranni', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-ranni">Ranni la Bruja</span>
+                    <p class="descripcion" id="ranni"><b>Ranni:</b> Una semidiosa de apariencia etérea que abandonó su
+                        cuerpo mortal por voluntad propia. Ranni busca liberarse del influjo del Elden Ring y trazar su
+                        propio destino alejado de los dioses. Ofrece al Sinluz uno de los caminos más elaborados, con
+                        una larga cadena de misiones que recorre las regiones más oscuras de las Tierras Intermedias.
+                    </p>
+                </div>
+            </div>
+            <div class="personaje">
+                <img src="../IMG/radagon.jpg" alt="Radagon">
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('radagon', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-radagon">Radagon de la Luna Dorada</span>
+                    <p class="descripcion" id="radagon"><b>Radagon:</b> Esposo de la Reina Marika y él mismo una
+                        extensión de su ser. Radagon dedicó su vida a intentar reparar el Elden Ring tras su fractura.
+                        Su verdadera naturaleza, inseparable de Marika, es uno de los mayores misterios de las Tierras
+                        Intermedias y se revela en el tramo final del enfrentamiento final.</p>
+                </div>
+            </div>
+            <div class="personaje">
+                <img src="../IMG/General_Radahn.jpg" alt="Radahn">
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('radahn', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-radahn">Radahn</span>
+                    <p class="descripcion" id="radahn"><b>Radahn:</b> Semidios y general legendario de las Tierras
+                        Intermedias, conocido por ser el guerrero más poderoso de su era. Dominaba la gravedad con su
+                        magia y era tan grande que solo su caballo Leonard, encogido con hechizos, podía cargarlo. Una
+                        maldición lo redujo a un estado salvaje, pero su figura permanece como una de las más imponentes
+                        de toda la historia de las Tierras Intermedias.</p>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <div>
+                <h2>- Las Invasiones -</h2>
+                <p>"En las Tierras Intermedias, no estás solo."</p>
+            </div>
+            <div>
+                <img src="../IMG/Tarnished_render_4_by_ssundpool_dfssu5m-pre.webp" alt="Invasor">
+            </div>
+        </aside>
+
+        <aside class="aside2">
+            <div>
+                <h2>- Crea tu Sinluz -</h2>
+                <form>
+                    <fieldset>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="Nombre" required>
+
+                        <label for="class">Clase:</label>
+                        <select id="class" name="Clase">
+                            <option value="vagante">Vagante</option>
+                            <option value="samurai">Samurai</option>
+                            <option value="guerrero">Guerrero</option>
+                            <option value="heroe">Héroe</option>
+                            <option value="astrologo">Astrólogo</option>
+                            <option value="prisionero">Prisionero</option>
+                            <option value="profeta">Profeta</option>
+                            <option value="confesor">Confesor</option>
+                            <option value="bandido">Bandido</option>
+                            <option value="miserable">Miserable</option>
+                        </select>
+
+                        <label>Recuerdo:</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Semilla"> Semilla
+                            dorada</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Cenizas"> Cenizas de
+                            Diablo</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Medallon"> Medallón de
+                            ámbar</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Apendice"> Apéndice de
+                            tierras</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Rama"> Rama
+                            cautivadora</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Tarro"> Tarro
+                            agrietado</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Llave"> Llave de espada
+                            pétrea</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Bendición">
+                            Bendición</label>
+                        <label class="label-radio"><input type="radio" name="valores" value="Nada" checked> Sin
+                            regalo</label>
+                        <input type="button" id="crear" value="Crear Sinluz">
+                </form>
+            </div>
+        </aside>
+
+        <footer>
+            <h3>Desarrollado por Vicente Martín Brito</h3>
+        </footer>
+
+    </div>
+
+    <script src="../JS/personajes.js"></script>
+</body>
+
+</html>
