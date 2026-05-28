@@ -437,6 +437,43 @@ input[type="button"]:hover {
     box-shadow: 0 7px 16px rgb(167, 113, 32);
 }
 
+.galeria-regiones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.galeria-regiones img {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 7px 16px rgb(36, 35, 34);
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+.galeria-regiones button {
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px black;
+    font-family: 'Ringbearer', cursive;
+}
+
+.galeria-regiones button:hover {
+    box-shadow: 0 7px 16px rgb(167, 113, 32);
+}
+
 @media (max-width: 768px) {
     .contenedor {
         grid-template-areas:
