@@ -28,19 +28,49 @@
         <main>
             <div class="personaje">
                 <img src="../IMG/melina.png" alt="Melina">
-                <p><b>Melina:</b> Una misteriosa joven que aparece ante el Sinluz al comienzo de su viaje.</p>
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('melina', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-melina">Melina</span>
+                    <p class="descripcion" id="melina"><b>Melina:</b> Una misteriosa joven que aparece ante el Sinluz al
+                        comienzo de su viaje. Actúa como guía y aliada, ofreciendo subir de nivel a cambio de Runas en
+                        los Lugares de Gracia. Su origen y verdadera naturaleza permanecen envueltos en secreto, aunque
+                        está íntimamente ligada a la voluntad de Marika y al destino de las Tierras Intermedias.</p>
+                </div>
             </div>
             <div class="personaje">
                 <img src="../IMG/ranni.webp" alt="Ranni">
-                <p><b>Ranni la Bruja:</b> Una semidiosa de apariencia etérea que abandonó su cuerpo mortal.</p>
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('ranni', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-ranni">Ranni la Bruja</span>
+                    <p class="descripcion" id="ranni"><b>Ranni:</b> Una semidiosa de apariencia etérea que abandonó su
+                        cuerpo mortal por voluntad propia. Ranni busca liberarse del influjo del Elden Ring y trazar su
+                        propio destino alejado de los dioses. Ofrece al Sinluz uno de los caminos más elaborados, con
+                        una larga cadena de misiones que recorre las regiones más oscuras de las Tierras Intermedias.
+                    </p>
+                </div>
             </div>
             <div class="personaje">
                 <img src="../IMG/radagon.jpg" alt="Radagon">
-                <p><b>Radagon de la Luna Dorada:</b> Esposo de la Reina Marika.</p>
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('radagon', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-radagon">Radagon de la Luna Dorada</span>
+                    <p class="descripcion" id="radagon"><b>Radagon:</b> Esposo de la Reina Marika y él mismo una
+                        extensión de su ser. Radagon dedicó su vida a intentar reparar el Elden Ring tras su fractura.
+                        Su verdadera naturaleza, inseparable de Marika, es uno de los mayores misterios de las Tierras
+                        Intermedias y se revela en el tramo final del enfrentamiento final.</p>
+                </div>
             </div>
             <div class="personaje">
                 <img src="../IMG/General_Radahn.jpg" alt="Radahn">
-                <p><b>Radahn:</b> Semidios y general legendario de las Tierras Intermedias.</p>
+                <div class="Pinformacion">
+                    <button onclick="mostrarInfo('radahn', this)">Ver más</button>
+                    <span class="nombre-grande" id="nombre-radahn">Radahn</span>
+                    <p class="descripcion" id="radahn"><b>Radahn:</b> Semidios y general legendario de las Tierras
+                        Intermedias, conocido por ser el guerrero más poderoso de su era. Dominaba la gravedad con su
+                        magia y era tan grande que solo su caballo Leonard, encogido con hechizos, podía cargarlo. Una
+                        maldición lo redujo a un estado salvaje, pero su figura permanece como una de las más imponentes
+                        de toda la historia de las Tierras Intermedias.</p>
+                </div>
             </div>
         </main>
 
@@ -106,6 +136,8 @@
         </footer>
 
     </div>
+
+    <script src="../JS/personajes.js"></script>
 </body>
 
 </html>

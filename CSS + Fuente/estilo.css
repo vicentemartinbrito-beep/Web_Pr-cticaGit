@@ -474,6 +474,47 @@ input[type="button"]:hover {
     box-shadow: 0 7px 16px rgb(167, 113, 32);
 }
 
+.Pinformacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.Pinformacion b {
+    color: white;
+    text-shadow: 3px 3px 6px black;
+    font-size: 1.1em;
+}
+
+.Pinformacion button {
+    background-image: url("../IMG/pngwing.com (6).png");
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-shadow: 5px 5px 6px rgb(69, 47, 14);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px black;
+    font-family: 'Ringbearer', cursive;
+    align-self: flex-start;
+}
+
+.Pinformacion button:hover {
+    box-shadow: 0 7px 16px rgb(167, 113, 32);
+}
+
+.nombre-grande {
+    font-size: 2em;
+    color: white;
+    text-shadow: 3px 3px 6px black;
+    flex: 1;
+}
+
 @media (max-width: 768px) {
     .contenedor {
         grid-template-areas:
